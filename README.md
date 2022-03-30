@@ -48,6 +48,10 @@ sudo apt install -y git-core python3-vcstools ros-noetic-control-msgs ros-noetic
 
 # Pip
 pip install argparse
+pip3 install --upgrade tensorflow-gpu
+pip install gym
+
+
 
 # Simulations
 source /opt/ros/noetic/setup.bash
@@ -64,6 +68,21 @@ cd ~/catkin_ws/
 catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+# Install openai_ros
+cd ~/catkin_ws/src
+git clone -b kinetic-devel https://github.com/ncbdrck/openai_ros.git
+git clone https://ncbdrck@bitbucket.org/theconstructcore/theconstruct_msgs.git
+cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
+
+cd ~/catkin_ws/src
+git clone https://bitbucket.org/theconstructcore/openai_ros.git
+cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
+catkin_make
+source devel/setup.bash
+rosdep install openai_ros
 
 
 ```
