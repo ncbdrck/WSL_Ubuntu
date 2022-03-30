@@ -86,4 +86,12 @@ rosdep install openai_ros
 ```
 CTRL + Shift + Scroll Up/Down = change window transparency level
 
+# Install PyCharm
+https://www.lifewire.com/how-to-install-the-pycharm-python-ide-in-linux-4091033
+gedit ~/.bashrc
+# add below to the code
+# export PATH="/opt/pycharm-*/bin:$PATH"
+sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
+
+
 ```
