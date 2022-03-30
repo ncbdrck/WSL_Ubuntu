@@ -49,6 +49,7 @@ sudo apt install -y git-core python3-vcstools ros-noetic-control-msgs ros-noetic
 # Pip
 pip install argparse
 pip3 install --upgrade tensorflow-gpu
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
 pip install gym
 pip install wandb
 
