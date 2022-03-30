@@ -1,6 +1,6 @@
 # WSL with Windows 11
 
-We can install wsl2 in windows 10, but we need take extra steps to vusualise Gazebo simulation
+We can install wsl2 in windows 10, but we need to take extra steps to visualise the Gazebo simulations.
 
 
 ## Install WSL
@@ -13,7 +13,7 @@ https://pureinfotech.com/install-wsl-windows-11/
 ```
 sudo apt update
 sudo apt upgrade -y
-sudo apt install gedit -y
+sudo apt install gedit firefox -y
 
 ```
 ## Install ROS, other packages, Workspaces and simulations
@@ -82,7 +82,7 @@ rosdep install openai_ros
 
 ```
 
-## Usefull commands
+## Useful commands
 ```
 CTRL + Shift + Scroll Up/Down = change window transparency level
 
