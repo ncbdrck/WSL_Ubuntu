@@ -4,6 +4,10 @@ We can install wsl2 in windows 10, but we need take extra steps to vusualise Gaz
 
 
 ## Install WSL
+```
+https://pureinfotech.com/install-wsl-windows-11/
+
+```
 
 ## Install Basic Stuff
 ```
