@@ -97,6 +97,6 @@ CTRL + Shift + Scroll Up/Down = change window transparency level
 
 # Install PyCharm
 https://www.lifewire.com/how-to-install-the-pycharm-python-ide-in-linux-4091033
-# create a link to pycharm so you can run it from the terminal as "pycharm"
+# Create a link to pycharm so you can run it from the terminal as "pycharm"
 sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
 ```
