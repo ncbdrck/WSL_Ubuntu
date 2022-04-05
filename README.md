@@ -7,8 +7,8 @@ For GUI in Windows 10 **(Skip if you are using Windows 11)**
 # link
 https://www.youtube.com/watch?v=DW7l9LHdK5c
 
-# Add this to the bashrc file
-# gedit ~/.bashrc
+# Add these lines to the bashrc file
+gedit ~/.bashrc
 export GAZEBO_IP=127.0.0.1
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 
 export LIBGL_ALWAYS_INDIRECT=0
