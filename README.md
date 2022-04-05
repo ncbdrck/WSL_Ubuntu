@@ -79,46 +79,6 @@ cd ~/catkin_ws/
 catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
-# Install openai_ros
-cd ~/catkin_ws/src
-git clone -b kinetic-devel https://github.com/ncbdrck/openai_ros.git
-git clone https://ncbdrck@bitbucket.org/theconstructcore/theconstruct_msgs.git
-cd ~/catkin_ws
-rosdep install --from-paths src --ignore-src -r -y
-catkin_make
-source devel/setup.bash
-rosdep install openai_ros
-
-# Install Real Robot - AIT lab - ABB Robot
-cd
-# Eber worked on this 
-git clone https://github.com/eberlawrence/robotenv_ws.git
-# we donot have the abb driver so we need to install it. We can do it inside the abb_robot_arm folder
-cd ~/robotenv_ws/src/abb_robot_arm
-git clone https://github.com/ros-industrial/abb_driver.git
-# we also need to install PhoXiControl software before compiling 
-# download the software from
-https://www.photoneo.com/downloads/phoxi-control/
-# then to install it 
-cd ~/Downloads
-tar -xvf PhotoneoPhoXiControlInstaller-1.7.5-Ubuntu20-STABLE.tar.gz
-chmod +x PhotoneoPhoXiControlInstaller-1.7.5-Ubuntu20-STABLE.run
-sudo ./PhotoneoPhoXiControlInstaller-1.7.5-Ubuntu20-STABLE.run --accept /opt/PhoXiControl
-# we need to check if $PHOXI_CONTROL_PATH=/opt/PhoXiControl
-echo $PHOXI_CONTROL_PATH
-# if not we need to add this to the bashrc 
-echo "PHOXI_CONTROL_PATH=/opt/PhoXiControl" >> ~/.bashrc
-
-# Catkin the new workspace and add to the bashrc file
-cd ~/robotenv_ws/
-rosdep install --from-paths src --ignore-src -r -y
-# Before compiling it, we need to remove old "build" and the "devel"
-rm -rf build devel
-catkin_make
-source devel/setup.bash
-echo "source ~/robotenv_ws/devel/setup.bash" >> ~/.bashrc
-source ~/.bashrc
 ```
 
 ## Useful commands
