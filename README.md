@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=DW7l9LHdK5c
 export GAZEBO_IP=127.0.0.1
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 
 export LIBGL_ALWAYS_INDIRECT=0
-``
+```
 
 ## Install WSL2
 ```
