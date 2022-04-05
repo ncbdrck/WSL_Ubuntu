@@ -25,8 +25,8 @@ https://pureinfotech.com/install-wsl-windows-11/
 sudo apt update
 sudo apt upgrade -y
 sudo apt install gedit firefox -y
-
 ```
+
 ## Install ROS, other packages, Workspaces and simulations
 ```
 # ROS
@@ -89,8 +89,6 @@ rosdep install --from-paths src --ignore-src -r -y
 catkin_make
 source devel/setup.bash
 rosdep install openai_ros
-
-
 ```
 
 ## Useful commands
@@ -103,6 +101,4 @@ gedit ~/.bashrc
 # add below to the code
 # export PATH="/opt/pycharm-*/bin:$PATH"
 sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
-
-
 ```
