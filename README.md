@@ -1,9 +1,21 @@
 # WSL with Windows 11
 
-We can install wsl2 in windows 10, but we need to take extra steps to visualise the Gazebo simulations.
+Here we are focusing on installing ROS Noetic with WSL for windows 11. We can also install wsl2 in windows 10, but we need to apply extra steps to visualise the Gazebo simulations.
 
+For GUI in Windows 10
+**Skip if you are using Windows 11**
+```
+# link
+https://www.youtube.com/watch?v=DW7l9LHdK5c
 
-## Install WSL
+# Add this to the bashrc file
+# gedit ~/.bashrc
+export GAZEBO_IP=127.0.0.1
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0 
+export LIBGL_ALWAYS_INDIRECT=0
+``
+
+## Install WSL2
 ```
 https://pureinfotech.com/install-wsl-windows-11/
 
