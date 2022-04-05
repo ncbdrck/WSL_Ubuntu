@@ -1,6 +1,6 @@
 # WSL with Windows 11
 
-Here we are focusing on installing ROS Noetic with WSL for windows 11. We can also install wsl2 in windows 10, but we need to apply extra steps to visualise the Gazebo simulations.
+Here we are focusing on installing ROS Noetic with WSL for windows 11. Of course, we can also install wsl2 in windows 10, but we need to apply extra steps to visualise the Gazebo simulations.
 
 For GUI in Windows 10 **(Skip if you are using Windows 11)**
 ```
@@ -97,8 +97,6 @@ CTRL + Shift + Scroll Up/Down = change window transparency level
 
 # Install PyCharm
 https://www.lifewire.com/how-to-install-the-pycharm-python-ide-in-linux-4091033
-gedit ~/.bashrc
-# add below to the code
-# export PATH="/opt/pycharm-*/bin:$PATH"
+# create a link to pycharm so you can run it from the terminal as "pycharm"
 sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
 ```
