@@ -17,7 +17,8 @@ export LIBGL_ALWAYS_INDIRECT=0
 ## Install WSL2
 ```
 https://pureinfotech.com/install-wsl-windows-11/
-
+# or
+https://docs.microsoft.com/en-us/windows/wsl/install
 ```
 
 ## Install Basic Stuff
