@@ -92,4 +92,8 @@ CTRL + Shift + Scroll Up/Down = change window transparency level
 https://www.lifewire.com/how-to-install-the-pycharm-python-ide-in-linux-4091033
 # Create a link to pycharm so you can run it from the terminal as "pycharm"
 sudo ln -s /opt/pycharm-*/bin/pycharm.sh /usr/local/bin/pycharm
+
+# Install ros dependencies
+# In a ROS workspace such as "cd ~/simulation_ws/"
+rosdep install --from-paths src --ignore-src -r -y
 ```
