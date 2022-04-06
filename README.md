@@ -4,7 +4,7 @@ Here we are focusing on installing ROS Noetic with WSL for windows 11. Of course
 
 For GUI in Windows 10 **(Skip if you are using Windows 11)**
 ```
-# Dp this after you install WSL in windows 10
+# Do this after you install WSL in windows 10
 # link
 https://www.youtube.com/watch?v=DW7l9LHdK5c
 
